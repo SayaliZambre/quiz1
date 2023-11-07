@@ -1,9 +1,13 @@
 import React from "react";
+import "./profile.css";
+import ProLeft from "./proLeft";
+import ProRight from "./proRight";
 
 export default function Profile () {
     return (
         <div className="profile">
-            <h1>This is the Profile page.</h1>
+            <ProLeft />
+            <ProRight />
         </div>
     );
 }
