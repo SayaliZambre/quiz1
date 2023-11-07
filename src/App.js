@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Login from './Components/login';
+import Signup from './Components/signup';
 
 function App() {
   return (
-    <div className="App">
+    <><div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,6 +22,10 @@ function App() {
         </a>
       </header>
     </div>
+    <Routes>
+        <Route path='/' element={<Login />}></Route>
+        <Route path="/profile" element={<Signup />}></Route>
+    </Routes></>
   );
 }
 
