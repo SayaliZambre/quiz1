@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(253, 253, 253);
+}
+
+.login {
+    width: 400px;
+    height: 490px;
+    background: #fdfdfd;
+    padding: 30px 20px;
+    color: #000;
+    border-radius: 30px;
+    /* border: 2px solid rgb(63, 62, 62); */
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.95);
+}
+
+.login h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.login .input-box {
+    position: relative;
+    /* width: 100%; */
+    height: 50px;
+    margin: 30px 0px;
+}
+
+.input-box input {
+    width: 80%;
+    height: 100%;
+    background: transparent; 
+    border: none;
+    outline: none;
+    border: 1px solid rgb(46, 46, 46);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #000;
+    padding: 20px;
+    margin: 0 10%;
+}
+
+.input-box input::placeholder {
+    color: #000000;
+}
+
+.input-box i {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+}
+
+.login .remember {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: -18px 0px 25px 35px;
+}
+.remember a{
+    margin: 0px 35px 0 0;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+.remember a:hover {
+    text-decoration: underline;
+    color: rgb(95, 110, 160);
+}
+.remember label input {
+    margin-right: 4px;
+}
+
+.login .btn {
+    width: 60%;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    transition: background-color .3s, box-shadow .3s;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    margin: -7px 20% 0;
+}
+.login .btn:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.login .btn:active{
+    background-color: #eeeeee;
+}
+.login .register-link {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.register-link p a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+    color: rgb(95, 110, 160);
+}
+
+h4 {
+    overflow: hidden;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h4::before,
+h4::after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h4::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h4::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.login .google-sign-in-button {
+    width: 60%;
+    cursor: pointer;
+    transition: background-color .3s, box-shadow .3s;
+    margin: 17px 20%;
+    padding: 12px 16px 12px 42px;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 13px 13px;
+}
+
+.google-sign-in-button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.google-sign-in-button:active {
+    background-color: #eeeeee;
+}
