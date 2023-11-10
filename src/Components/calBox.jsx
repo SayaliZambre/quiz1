@@ -7,8 +7,8 @@ export default function CalBox(props) {
     
     const bg = {
         backgroundColor : value ? "green" : "gray",
-        width: "50px",
-        height: "50px"
+        width: "25px",
+        height: "25px"
     }
 
   return (
