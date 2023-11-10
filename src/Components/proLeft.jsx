@@ -14,7 +14,7 @@ export default function ProLeft() {
         <label>Class <input type="text" name="class" id="class" /></label>
         <div className="but_div">
         <button type="submit">Save</button>
-        <button type='cancel'>Cancle</button>
+        <button type='cancel'>Cancel</button>
         </div>
       </form>
     </div>
