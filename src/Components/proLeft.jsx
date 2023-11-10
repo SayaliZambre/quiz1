@@ -12,7 +12,10 @@ export default function ProLeft() {
         <label>Email <input type="email" name="email" id="email" /></label>
         <label>Phone no. <input type="number" max={9999999999} min={1000000000} name="phone_no" id="phone_no" /></label>
         <label>Class <input type="text" name="class" id="class" /></label>
+        <div className="but_div">
         <button type="submit">Save</button>
+        <button type='cancel'>Cancle</button>
+        </div>
       </form>
     </div>
   )

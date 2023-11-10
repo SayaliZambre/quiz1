@@ -10,7 +10,7 @@ export default function ProCal() {
 
   return (
     <div className="pro_cal">
-      <div className="days_name">
+      <div className="proCal_box">
         <p>Mon</p>
         <p>Tue</p>
         <p>Wed</p>
@@ -18,8 +18,6 @@ export default function ProCal() {
         <p>Fri</p>
         <p>Sat</p>
         <p>Sun</p>
-      </div>
-      <div className="proCal_box">
         {data.map(key => {
           return <CalBox val={key.val} />
         })}
