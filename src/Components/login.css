@@ -11,11 +11,12 @@ body {
     align-items: center;
     min-height: 100vh;
     background: rgb(253, 253, 253);
+    margin: 0 50%;
 }
 
 .login {
     width: 400px;
-    height: 490px;
+    height: 500px;
     background: #fdfdfd;
     padding: 30px 20px;
     color: #000;
@@ -66,7 +67,7 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 16px;
-    margin: -18px 0px 25px 35px;
+    margin: -18px 0px 35px 35px;
 }
 .remember a{
     margin: 0px 35px 0 0;
@@ -167,7 +168,7 @@ h4::after {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
     background-color: #fff;
     background-repeat: no-repeat;
-    background-position: 13px 13px;
+    background-position: 13px 12px;
 }
 
 .google-sign-in-button:hover {
@@ -176,4 +177,39 @@ h4::after {
 
 .google-sign-in-button:active {
     background-color: #eeeeee;
+}
+@media screen and (max-width: 500px) {
+    .login{
+        width: 300px;
+        height: 450px;
+        padding: 20px 0;
+    }
+    .login h1{
+        margin-top: 3px;
+        margin-bottom: 30px;
+    }
+    .login .input-box{
+        margin: 20px 0 15px 0;
+    }
+    .input-box i{
+        margin-right: -15px;
+    }
+    .login .remember {
+        font-size: 13px;
+        margin-top: -7px;
+        margin-bottom: 23px;
+    }
+    .login .btn{
+        margin-top: 0px;
+        font-size: 17px;
+    }
+    .login .register-link{
+        font-size: 14px;
+        margin-top: 7px;
+    }
+    .login .google-sign-in-button{
+        width: 60%;
+        font-size: 12px;
+        background-position: 13px 11.5px;
+    }
 }
