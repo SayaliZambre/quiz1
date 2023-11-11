@@ -6,7 +6,7 @@ import CalBox from './calBox';
 
 export default function ProCal() {
 
-  const [data, useData] = useState(Data.Data);
+  const [data, setData] = useState(Data.Data);
 
   return (
     <div className="pro_cal">
