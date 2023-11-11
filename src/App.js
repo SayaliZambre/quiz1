@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import { Routes, Route } from "react-router-dom";
-import Login from './Components/login';
-import Signup from './Components/signup';
+import Login from './Components/Registration/login';
+import Signup from './Components/Registration/signup';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
     </div>
     <Routes>
         <Route path='/' element={<Login />}></Route>
-        <Route path="/profile" element={<Signup />}></Route>
+        <Route path="/signup" element={<Signup />}></Route>
     </Routes></>
   );
 }

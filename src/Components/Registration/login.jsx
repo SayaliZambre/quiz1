@@ -28,7 +28,7 @@ export default function Login() {
           </button>
           <div className="register-link">
             <p>
-              Not a Member? <a href="b">Sign Up</a> here
+              Not a Member? <a href="signup">Sign Up</a> here
             </p>
           </div>
           <h4>OR</h4>
