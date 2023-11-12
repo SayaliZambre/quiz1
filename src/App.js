@@ -1,7 +1,7 @@
 import './App.css';
 import {Routes,Route} from "react-router-dom";
-import Leaderboard from './components/Leaderboard/Leaderboard';
-import Result from './components/result';
+import Leaderboard from './Components/Leaderboard/Leaderboard';
+import Result from './Components/result';
 function App() {
   return (
     <Routes>
