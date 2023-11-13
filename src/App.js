@@ -1,31 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 import { Routes, Route } from "react-router-dom";
-import Scheduledpage from './components/schedulepage';
+import ScheduledPage from './component/Schedulepage.jsx'; 
+import './component/quiz.css';
+// import React from 'react';
 
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React 
-        </a>
-      </header>
-      <Routes> 
-        <Route path='/' element={ <scheduledpage />}></Route>
-      </Routes>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div>
+            <ScheduledPage />
+            <Routes> 
+                <Route path='/' element={<ScheduledPage />} />
+            </Routes>
+        </div>
+    );
+};
 
 export default App;
