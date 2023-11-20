@@ -1,9 +1,10 @@
 import React from 'react';
+import Navbar from '../../SharedComponents/navbar';
 
 export default function Homepage() {
   return (
     <div>
-        <h1>This is Hoepage.</h1>
+      <Navbar />
     </div>
   )
 }

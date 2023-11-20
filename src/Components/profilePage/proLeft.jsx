@@ -28,6 +28,16 @@ export default function ProLeft() {
     setUclass(event.target.value);
   }
 
+  const handleClick = (event) => {
+    setdata({
+      name : name,
+      email : email,
+      phoneNo : phoneNo,
+      class : uclass
+    });
+    event.preventDefault();
+  }
+
   return (
     <div className="pro_left">
       <div className="pro_head">
@@ -39,7 +49,7 @@ export default function ProLeft() {
         <label>Phone no. <input type="number" max={9999999999} min={1000000000} name="phone_no" id="phone_no" value={phoneNo} onChange={handlePhoneNo}/></label>
         <label>Class <input type="text" name="class" id="class" value={uclass} onChange={handleClass}/></label>
         <div className="but_div">
-        <button type="submit">Save</button>
+        <button type="submit" onClick={handleClick}>Save</button>
         <button type='cancel'>Cancel</button>
         </div>
       </form>
