@@ -1,17 +1,10 @@
 import React from 'react'
-import Que from './components/Que.js'
+import Que from "./components/Que"
 
-
-
-function App() {
-  
+export default function App() {
   return (
     <div>
-     <Que/>
+      <Que/>
     </div>
-
   )
-  
 }
-
-export default App
