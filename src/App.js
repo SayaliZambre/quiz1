@@ -7,7 +7,7 @@ import './component/quiz.css';
 const App = () => {
     return (
         <div>
-            <ScheduledPage />
+            
             <Routes> 
                 <Route path='/' element={<ScheduledPage />} />
             </Routes>
