@@ -1,33 +1,202 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Style.css";
 
 const Que = () => {
   return (
-    <div className="Main" >
+    <div className="Main">
       <div className="Heading">
-        <h1>Mock Test</h1>
-        <div className="Subject">
-          <button className="Phy">Physics</button>
-          <button className="Chem">Chemistry</button>
-          <button className="Math">Mathematics</button>
+        <h2>Logo</h2>
+      </div>
+      <div className="sub-heading">
+        <h3>Online Test PCB</h3>
+      </div>
+      <div className="lower">
+        <div className="index-block">
+          <div className="sub-index-blocl">
+            <h3>[1]Physics</h3>
+            <div className="indexes">
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+            </div>
+          </div>
+
+          <div className="sub-index-blocl">
+            <h3>[2]Chemistry</h3>
+            <div className="indexes">
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+            </div>
+          </div>
+
+          <div className="sub-index-blocl">
+            <h3>[3]Mathematics</h3>
+            <div className="indexes">
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+              <div className="s-div">
+                <a href="#">1</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="quetion-block">
+          <h4>Physics - Quetion 04</h4>
+          <p>
+            The power factor of R-L circuit is 1/(sqrt(3)) If the inductive
+            reactance is 2. The value of resistance is ?
+          </p>
+
+          <div className="option">
+            <label>
+              <div className="value">
+                <input type="radio" autoComplete="off" name="q_opt"></input>
+                <p>option1</p>
+              </div>
+              <div className="value">
+                <input type="radio" autoComplete="off" name="q_opt"></input>
+                <p>option2</p>
+              </div>
+              <div className="value">
+                <input type="radio" autoComplete="off" name="q_opt"></input>
+                <p>option3</p>
+              </div>
+              <div className="value">
+                <input type="radio" autoComplete="off" name="q_opt"></input>
+                <p>option4</p>
+              </div>
+            </label>
+            <div className="buttons">
+              <button title="Previus" className="prev">
+                Previous
+              </button>
+              <button title="Submit" className="sub">
+                Submit
+              </button>
+              <button title="Next" className="Next">
+                Next
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="Q">
-      <h2>Quetion No. 1</h2>
-      </div>
-       <div className="Que">
-          <h3>The power factor of R-L circuit is 1/(sqrt(3)) If the inductive reactance is 2, The value of resistance is ?</h3>
-          <input type="radio" value="Option1" name="Options" /> Option 1
-          <input type="radio" value="Option2" name="Options" /> Option 2
-          <input type="radio" value="Option3" name="Options" /> Option 3
-          <input type="radio" value="Option4" name="Options" /> Option 4
-       </div>
-         <div className="buttons">
-          <button className="b1">Previous</button>
-          <button className="b1">Next</button>
-          <button className="b1">Submit</button>
-
-         </div>
     </div>
   );
 };
