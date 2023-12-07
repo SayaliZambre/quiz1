@@ -1,92 +1,83 @@
 import React from "react";
 import "./signup.css";
+import { GoogleLogin } from '@react-oauth/google';
 
 export default function Signup() {
+  const responseMessage = (response) => {
+    console.log(response);
+  };
+  const errorMessage = (error) => {
+    console.log(error);
+  };
   return (
     <div>
       {/* <h1>This is the Signup page.</h1> */}
       <form action="" className="signup">
         <h1>SIGN UP</h1>
         <div className="input_box">
-          <input type="text" id="name" placeholder="Name" required />
+          <input type="text" id="username" placeholder="" required />
+          <label htmlFor="username">Username</label>
         </div>
         <div className="input_box">
-          <input type="email" id="email" placeholder="Email ID" required />
+          <input type="email" id="email" placeholder="" required />
+          <label htmlFor="email">Email-ID</label>
         </div>
-        <div className="gender-birth">
-          <div className="gender">
-            <fieldset>
-              <legend>Gender</legend>
-              <input type="radio" name="gender" id="male" value="M" />
-              <label htmlFor="" className="male">
-                Male
-              </label>
-              <input type="radio" name="gender" id="female" value="F" />
-              <label htmlFor="" className="female">
-                Female
-              </label>
-            </fieldset>
-          </div>
-          <div className="birth">
-            <input type="date" id="birthday" />
-          </div>
-        </div>
-        <div className="phone-class">
-          <div className="phone">
+        <div className="phone-gender">
+          <div className="input_box phone">
             <input
               type="tel"
               id="phone_number"
-              placeholder="Mobile Number"
+              placeholder=""
               maxLength={10}
               required
             />
+            <label htmlFor="phone">Mobile Number</label>
           </div>
-          <div className="class">
-            <select name="class" id="class" className="std" required>
-              <option value="">Class</option>
-              <option value="10">10th</option>
-              <option value="11">11th</option>
-              <option value="12">12th</option>
+          <div className="gender">
+            <select name="gender" id="gender" className="gnd" required>
+              <option value="">Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
             </select>
           </div>
         </div>
-        <div className="input_box">
-          <input type="text" id="username" placeholder="Username" required />
-        </div>
         <div className="password">
-          <div className="input_box">
+          <div className="input_box pwd">
             <input
               type="password"
               id="pwd"
-              placeholder="Password"
+              placeholder=""
               minlength="8"
               maxLength="10"
               required
             />
-            <p className="message">
-              <ul>
-                <li>At least 8 characters</li>
-              </ul>
-              <ul>
-                <li>Must contain 1 lowercase</li>
-              </ul>
-              <ul>
-                <li>Must contain 1 uppercase</li>
-              </ul>
-              <ul>
-                <li>Must contain 1 symbol</li>
-              </ul>
-            </p>
+            <label htmlFor="password">Password</label>
           </div>
-          <div className="input_box">
+          <p className="message">
+            <ul>
+              <li>At least 8 characters</li>
+            </ul>
+            <ul>
+              <li>Must contain 1 lowercase</li>
+            </ul>
+            <ul>
+              <li>Must contain 1 uppercase</li>
+            </ul>
+            <ul>
+              <li>Must contain 1 symbol</li>
+            </ul>
+          </p>
+          <div className="input_box cnf_pwd">
             <input
               type="password"
               id="pwd"
-              placeholder="Confirm Password"
+              placeholder=""
               minlength="8"
               maxLength="10"
               required
             />
+            <label htmlFor="confirm password">Confirm Password</label>
           </div>
         </div>
         <button type="submit" className="botn">
@@ -98,9 +89,9 @@ export default function Signup() {
           </p>
         </div>
         <h3>OR</h3>
-        <button type="button" class="google-sign-in-button">
-          Continue with Google
-        </button>
+        <p className="google-sign-in-button">
+          <GoogleLogin onSuccess={responseMessage} onError={errorMessage} />
+        </p>
       </form>
     </div>
   );
