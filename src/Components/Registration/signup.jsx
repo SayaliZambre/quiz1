@@ -2,27 +2,11 @@ import React, { useState } from "react";
 import "./signup.css";
 import { GoogleLogin } from '@react-oauth/google';
 import PasswordChecklist from "react-password-checklist";
-import { Icon } from 'react-icons-kit';
-import { eyeOff } from 'react-icons-kit/feather/eyeOff';
-import { eye } from 'react-icons-kit/feather/eye';
 
 export default function Signup() {
   const [password, setPassword] = useState("");
   const [matchPassword, setMatchPassword] = useState("");
   // const [error, setErrorMessage] = useState("");
-
-  const [type, setType] = useState('password');
-  const [icon, setIcon] = useState(eyeOff);
-  const handleToggle = () => {
-    if (type === 'password') {
-      setIcon(eye);
-      setType('text')
-    }
-    else {
-      setIcon(eyeOff)
-      setType('password')
-    }
-  }
 
   function handleSetPassword(event) {
     setPassword(event.target.value);
