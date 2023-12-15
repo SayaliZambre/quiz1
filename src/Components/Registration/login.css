@@ -151,7 +151,7 @@ h4::after {
     margin-right: -50%;
 }
 .google-login-in-button{
-    margin: 5% 20% 0px 20%;
+    margin: 5% 20% 0px 25%;
 }
 @media screen and (max-width: 500px) {
     .login{

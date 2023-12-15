@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "./signup.css";
 import { GoogleLogin } from '@react-oauth/google';
+import PasswordChecklist from "react-password-checklist";
+import { Icon } from 'react-icons-kit';
+import { eyeOff } from 'react-icons-kit/feather/eyeOff';
+import { eye } from 'react-icons-kit/feather/eye';
 
 export default function Signup() {
+  const [password, setPassword] = useState("");
+  const [matchPassword, setMatchPassword] = useState("");
+  // const [error, setErrorMessage] = useState("");
+
+  const [type, setType] = useState('password');
+  const [icon, setIcon] = useState(eyeOff);
+  const handleToggle = () => {
+    if (type === 'password') {
+      setIcon(eye);
+      setType('text')
+    }
+    else {
+      setIcon(eyeOff)
+      setType('password')
+    }
+  }
+
+  function handleSetPassword(event) {
+    setPassword(event.target.value);
+  }
+  function handleSetMatchPassword(event) {
+    setMatchPassword(event.target.value);
+  }
+
   const responseMessage = (response) => {
     console.log(response);
   };
@@ -45,36 +73,43 @@ export default function Signup() {
         <div className="password">
           <div className="input_box pwd">
             <input
-              type="password"
+              type={type}
+              value={password}
+              onChange={handleSetPassword}
+              // type="password"
               id="pwd"
               placeholder=""
               minlength="8"
-              maxLength="10"
               required
             />
+            {/* <span className="eyeon" onClick={handleToggle}>
+              <Icon class="absolute mr-10" icon={icon} size={25} />
+            </span> */}
             <label htmlFor="password">Password</label>
           </div>
-          <p className="message">
-            <ul>
-              <li>At least 8 characters</li>
-            </ul>
-            <ul>
-              <li>Must contain 1 lowercase</li>
-            </ul>
-            <ul>
-              <li>Must contain 1 uppercase</li>
-            </ul>
-            <ul>
-              <li>Must contain 1 symbol</li>
-            </ul>
-          </p>
+          <div className="message">
+            <PasswordChecklist
+              rules={["capital", "minLength", "lowercase", "number", "match"]}
+              minLength={8}
+              value={password}
+              valueAgain={matchPassword}
+              messages={{
+                minLength: "At Least 8 characters",
+                capital: "Must contain 1 uppercase",
+                lowercase: "Must conatin 1 lowercase",
+                number: "Must contain 1 number",
+                match: "Match to each other"
+              }}
+            />
+          </div>
           <div className="input_box cnf_pwd">
             <input
+              value={matchPassword}
+              onChange={handleSetMatchPassword}
               type="password"
               id="pwd"
               placeholder=""
               minlength="8"
-              maxLength="10"
               required
             />
             <label htmlFor="confirm password">Confirm Password</label>

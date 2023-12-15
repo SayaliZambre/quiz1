@@ -68,11 +68,14 @@
     grid-template-columns: repeat(auto-fit, minmax(160px, 2fr));
 }
 .password .message{
-    margin-top: 25px;
-    margin-left: 23px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #000;
 }
+
 .password .cnf_pwd{
-    margin-top: -15px;
+    margin-top: -40px;
 }
 .signup .botn {
     width: 50%;
@@ -135,17 +138,20 @@ h3::after {
 }
 .google-sign-in-button{
     width: 47%;
-    margin: 5% 27% 0 27%;
+    margin: 5% 27% 0 30%;
 }
 @media screen and (max-width: 500px){
+    body{
+        overflow-y: hidden;
+    }
     .signup{
         width: 310px;
-        height: 570px;
+        height: 600px;
         margin-top: -50px;
     }
     .signup h1{
-        margin-top: -18px;
-        margin-bottom: 20px;
+        margin-top: -20px;
+        margin-bottom: 17px;
     }
     .signup .input_box{
         margin-left: 0px;
@@ -164,12 +170,12 @@ h3::after {
         background-color: transparent;
     }
     .password .message{
-        margin-top: 7px;
-        font-size: 13px;
-        margin-left: 13px;
+        margin-top: 5px;
+        font-size: 11px;
+        margin-left: 0px;
     }
     .password .cnf_pwd{
-        margin-top: 8px;
+        margin-top: 5px;
     }
     .signup .botn{
         width: 75%;

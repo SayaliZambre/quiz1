@@ -21,7 +21,7 @@ export default function Login() {
               <i class="bx bxs-user"></i>
             </div>
             <div className="input-box">
-              <input type="password" placeholder="Password" required />
+              <input type="password" placeholder="Password" minLength={8} required />
               <i class="bx bxs-lock"></i>
             </div>
             <div className="remember">
