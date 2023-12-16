@@ -1,0 +1,50 @@
+.Heading{
+   
+    background-color: #e3e3e3;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+   
+}
+h1{
+    margin: 5px;
+}
+.Main{
+    padding: 20px;
+    margin: 10px;
+}
+.Subject{
+   display: flex;
+   justify-content: space-between;
+   margin: 50px;
+   padding-bottom: 10px;
+   
+}
+.buttons{
+    display: flex;
+   justify-content: space-between;
+   margin: 50px;
+   padding-bottom: 10px;
+}
+.Phy{
+    font-size: 22px;
+}
+.Chem{
+    font-size: 22px;
+}
+.Math{
+    font-size: 22px;
+}
+.b1{
+    font-size: 22px;
+}
+.Q{
+    background-color: gray;
+}
+h3{
+  color: 	#1A1110;  
+}
+
+
+
+
+
+
