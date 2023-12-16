@@ -1,8 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import { Routes, Route } from "react-router-dom";
+
 import Login from './Components/Registration/login';
 import Signup from './Components/Registration/signup';
+
+
+import Profile from './Components/profilePage/profile';
+import Homepage from './Components/homePage/homepage';
 
 
 function App() {
