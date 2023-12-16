@@ -1,14 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+
+import {Routes,Route} from "react-router-dom";
+import Leaderboard from './Components/Leaderboard/Leaderboard';
+import Result from './Components/result';
+function App() {
+  return (
+    <Routes>
+      <Route path='/' element={<Leaderboard />}></Route>
+      <Route path='/Result' element={<Result />}></Route>
+    </Routes>
 import { Routes, Route } from "react-router-dom";
 
 import Login from './Components/Registration/login';
 import Signup from './Components/Registration/signup';
-
-
 import Profile from './Components/profilePage/profile';
 import Homepage from './Components/homePage/homepage';
-
 
 function App() {
   return (
@@ -31,8 +37,8 @@ function App() {
     <Routes>
         <Route path='/login' element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
-    </Routes></>
+    </Routes>
+</>
   );
 }
-
 export default App;
