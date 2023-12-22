@@ -1,50 +1,74 @@
-.Heading{
-   
-    background-color: #e3e3e3;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-   
+.Main {
+  margin: 20px;
+  background-color: #f2f3f4;
+  
 }
-h1{
-    margin: 5px;
+.Heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #404040;
+  color: white;
 }
-.Main{
-    padding: 20px;
-    margin: 10px;
+.sub-index-blocl ,.chem-index-block{
+ background-color: #808080;
 }
-.Subject{
-   display: flex;
-   justify-content: space-between;
-   margin: 50px;
-   padding-bottom: 10px;
-   
+.sub-heading {
+}
+.index-block {
+  
+  flex-direction: row;
+  padding: 10px;
+  padding-top: 7px;
+  width: 300px;
+  height: 500px;
+  background-color: white;
+}
+.indexes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.s-div{
+  display: flex;
+  flex-direction: row;
+  background-color: #C0C0C0;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-style: solid;
+  border-color: #404040;
+  margin: 2px;
+  border-radius: 0.2rem;
+}
+.s-div a{
+  text-decoration: none;
+  color: black;
+}
+.lower{
+  display: flex;
+}
+.quetion-block{
+  background-color: white;
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+  padding-top: 0px;
+  margin-left: 15px;
+}
+
+.value{
+  display: flex;
+}
+.prev,.sub,.Next{
+  margin: 20px;
+  font-size: 1.5rem;
 }
 .buttons{
-    display: flex;
-   justify-content: space-between;
-   margin: 50px;
-   padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #404040;
 }
-.Phy{
-    font-size: 22px;
-}
-.Chem{
-    font-size: 22px;
-}
-.Math{
-    font-size: 22px;
-}
-.b1{
-    font-size: 22px;
-}
-.Q{
-    background-color: gray;
-}
-h3{
-  color: 	#1A1110;  
-}
-
-
-
-
-
 
