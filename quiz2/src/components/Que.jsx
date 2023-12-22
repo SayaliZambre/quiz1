@@ -147,11 +147,11 @@ const Que = () => {
               <div className="s-div">
                 <a href="#">1</a>
               </div>
-              <div className="s-div">
+              <div className="s-div">d
                 <a href="#">1</a>
               </div>
               <div className="s-div">
-                <a href="#">1</a>
+                <a href="#">1</a>A
               </div>
             </div>
           </div>
