@@ -57,10 +57,10 @@ export default function Signup() {
         <div className="password">
           <div className="input_box pwd">
             <input
-              type={type}
+              // type={type}
               value={password}
               onChange={handleSetPassword}
-              // type="password"
+              type="password"
               id="pwd"
               placeholder=""
               minlength="8"
