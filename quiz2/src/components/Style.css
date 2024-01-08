@@ -1,0 +1,74 @@
+.Main {
+  margin: 20px;
+  background-color: #f2f3f4;
+  
+}
+.Heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #404040;
+  color: white;
+}
+.sub-index-blocl ,.chem-index-block{
+ background-color: #808080;
+}
+.sub-heading {
+}
+.index-block {
+  
+  flex-direction: row;
+  padding: 10px;
+  padding-top: 7px;
+  width: 300px;
+  height: 500px;
+  background-color: white;
+}
+.indexes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.s-div{
+  display: flex;
+  flex-direction: row;
+  background-color: #C0C0C0;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-style: solid;
+  border-color: #404040;
+  margin: 2px;
+  border-radius: 0.2rem;
+}
+.s-div a{
+  text-decoration: none;
+  color: black;
+}
+.lower{
+  display: flex;
+}
+.quetion-block{
+  background-color: white;
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+  padding-top: 0px;
+  margin-left: 15px;
+}
+
+.value{
+  display: flex;
+}
+.prev,.sub,.Next{
+  margin: 20px;
+  font-size: 1.5rem;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  background-color: #404040;
+}
+
