@@ -1,0 +1,197 @@
+.signup {
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.95);
+    width: 500px;
+    height: 650px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    padding: 20px 20px;
+}
+.signup h1 {
+    text-align: center;
+    font-size: 36px;
+    padding-top: 15px;
+    margin-bottom: 30px;
+}
+.signup .input_box {
+    position: relative;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.input_box input {
+    width: 90%;
+    height: 40px;
+    color: #565656;
+    background: none;
+    padding: 0.625rem;
+    border: 1px solid #030104;
+    border-radius: 10px;
+}
+.input_box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 0.625rem 0.625rem;
+    color: #030104;
+    background-color: #ffffff;
+    padding-inline: 0.25rem;
+    border: none;
+    pointer-events: none;
+    transition: translate 250ms, background-color 250ms, border-color 250ms;
+}
+.input_box:focus-within label,
+.input_box:not(:has(:placeholder-shown)) label {
+    translate: 0.625rem -0.625rem;
+    border-color: #030104;
+}
+.input_box::placeholder {
+    color: transparent;
+}
+.signup .phone-gender {
+    display: flex;
+    column-gap: 27px;
+}
+.phone-gender .gender {
+    padding-top: 20px;
+}
+.gender .gnd {
+    width: 170px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #030104;
+    border-radius: 10px;
+    font-size: 16px;
+    padding-left: 7px;
+    padding-bottom: 3px;
+}
+.signup .password {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 2fr));
+}
+.password .message{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #000;
+}
+
+.password .cnf_pwd{
+    margin-top: -40px;
+}
+.signup .botn {
+    width: 50%;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    transition: background-color .3s, box-shadow .3s;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    margin: 30px 25% 0;
+}
+.signup .botn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.signup .botn:active {
+    background-color: #eeeeee;
+}
+.signup .register-link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+.register-link p a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.register-link p a:hover {
+    text-decoration: underline;
+    color: rgb(44, 175, 168);
+}
+h3 {
+    overflow: hidden;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+h3::before,h3::after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 40%;
+}
+h3::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+h3::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+.google-sign-in-button{
+    width: 47%;
+    margin: 5% 27% 0 30%;
+}
+@media screen and (max-width: 500px){
+    body{
+        overflow-y: hidden;
+    }
+    .signup{
+        width: 310px;
+        height: 600px;
+        margin-top: -50px;
+    }
+    .signup h1{
+        margin-top: -20px;
+        margin-bottom: 17px;
+    }
+    .signup .input_box{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .input_box input{
+        width: 100%;
+    }
+    .signup .phone-gender{
+        column-gap: 10px;
+    }
+    .phone-gender .gender .gnd{
+        width: 100%;
+        margin-right: 40px;
+        margin-top: -5px;
+        background-color: transparent;
+    }
+    .password .message{
+        margin-top: 5px;
+        font-size: 11px;
+        margin-left: 0px;
+    }
+    .password .cnf_pwd{
+        margin-top: 5px;
+    }
+    .signup .botn{
+        width: 75%;
+        margin: 8% 0 0 13%;
+        font-size: 16px;
+    }
+    .signup .register-link{
+        font-size: 11px;
+        margin-top: 8px;
+    }
+    h3{
+        font-size: 18px;
+        margin-top: -6px;
+    }
+    .google-sign-in-button{
+        width: 80%;
+        margin: 2% 0 0 11%;
+    }
+}

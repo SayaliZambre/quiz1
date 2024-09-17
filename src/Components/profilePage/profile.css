@@ -1,0 +1,17 @@
+.profile_main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    width: 80vw;
+    height: 90vh;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0.2px black;
+    justify-content: space-evenly;
+    align-items: center;
+}

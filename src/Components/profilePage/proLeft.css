@@ -1,0 +1,84 @@
+.pro_left {
+    width: 60%;
+    height: 90%;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pro_head {
+    width: 90%;
+    height: 20%;
+}
+
+.pro_head h1 {
+    font-size: 50px;
+}
+
+.pro_form {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pro_form label {
+    font-size: 23px;
+    width: 90%;
+    height: auto;
+}
+
+.pro_form input {
+    width: 90%;
+    height: 30px;
+    border: 0.2px solid rgb(179, 179, 179);
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(135, 134, 134);
+}
+
+.pro_form input:focus {
+    outline: none;
+    border: none;
+    color: black;
+}
+
+.pro_form input:invalid {
+    border: 2px solid red;
+}
+
+.pro_form input:focus:valid {
+    outline: 2px solid blue;
+}
+
+.but_div {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.pro_form button {
+    width: 120px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 2px 2px 5px 0.2px black;
+}
+
+.pro_form button:nth-of-type(1) {
+    background-color: green;
+    color: white;
+}
+
+.pro_form button:active {
+    box-shadow: 0px 0px 5px 0.2px black;
+}
